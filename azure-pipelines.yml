@@ -23,3 +23,9 @@ steps:
     orchestratorConnection: 'Orchestrator_Uipath Devops Connections'
     testProjectPath: 'Sample1Testing'
     folderName: 'Automation'
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: 'TestCase'
+    orchestratorConnection: 'Orchestrator_Uipath Devops Connections'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
