@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: UiPathRunJob@4
+  inputs:
+    orchestratorConnection: 'Orchestrator_Uipath Devops Connections'
+    processName: 'Sample1Testing'
+    folderName: 'Automation'
+    user: 'windows-5fq9nr8\user'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
